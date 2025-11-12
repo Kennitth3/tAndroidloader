@@ -1,34 +1,29 @@
 plugins {
     id("com.android.application")
-    kotlin("android")
+    id("org.jetbrains.kotlin.android")
 }
 
 android {
-    namespace = "com.example.modmanager"
+    namespace = "com.example.terrariamodmanager"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.modmanager"
-        minSdk = 21
+        applicationId = "com.example.terrariamodmanager"
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
-        versionName = "0.1"
+        versionName = "1.0"
     }
 
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
-    }
-
-    kotlinOptions {
-        jvmTarget = "17"
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+        }
     }
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.10")
-    implementation("com.squareup.duktape:duktape-android:1.3.0") // scripting (Duktape)
-    implementation("androidx.core:core-ktx:1.10.1")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.9.0")
+    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("androidx.appcompat:appcompat:1.7.0")
+    implementation("com.google.android.material:material:1.12.0")
 }
