@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btn_inspect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inspect Terraria APK" />
+
+    <TextView
+        android:id="@+id/tv_inspect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inspection results appear here"
+        android:paddingTop="12dp" />
+
+    <View android:layout_width="match_parent" android:layout_height="8dp"/>
+
+    <Button
+        android:id="@+id/btn_load_mod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load compiled mod (dex)" />
+
+    <Button
+        android:id="@+id/btn_run_script_mod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Run script mod (main.js)" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status/Logs"
+        android:paddingTop="12dp" />
+</LinearLayout>
